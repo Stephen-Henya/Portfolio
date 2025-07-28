@@ -1,4 +1,7 @@
+/* Importing the DM Sans font */
 @import url('https://fonts.googleapis.com/css?family=DM Sans');
+
+/* Creating space when jumping to anchors */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
