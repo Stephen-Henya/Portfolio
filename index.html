@@ -5,9 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stephen Thiong'o Henya – Web Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li>Stephen Henya</li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- Hero Section -->
   <div class="hero">
     <div class="overlay">
       <h1 class="hero-title">Hey, I'm Stephen Thiong'o Henya</h1>
@@ -16,11 +31,13 @@
     </div>
   </div>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>I'm a creative front-end developer passionate about visual storytelling, design systems, and bringing interfaces to life with smooth, expressive code. I thrive in that sweet spot where design and tech meet.</p>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" class="gradient-bg">
     <h2>Skills</h2>
     <ul>
@@ -31,41 +48,62 @@
     </ul>
   </section>
 
+  <!-- Education Section -->
   <section id="education">
     <h2>Education</h2>
     <p>BSc in Electrical and Electronic Engineering – University of Nairobi</p>
     <a href="HenyaStephenCV.pdf" download class="btn">Download CV</a>
   </section>
 
+  <!-- Interests Section -->
+   <section id="interests">
+     <h2>Interests</h2>
+     <ul>
+       <li>Building responsive and accessible websites</li>
+       <li>Exploring new technologies and frameworks</li>
+       <li>Working on open-source projects</li>
+    </ul>
+   </section>
+
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="project-card">
-      <h3><a href="https://github.com/Stephen-Henya/No_Kugeria_Mani" target="_blank">Project 1</a></h3>
-      <p>>A multi-language “Hello World” application created during onboarding. Built using Python, JavaScript, and HTML to demonstrate initial GitHub workflow and basic version control practices.</p>
+      <h3><a href="https://github.com/Stephen-Henya/No_Kugeria_Mani" target="_blank">Hello World demo</a></h3>
+      <p>A multi-language “Hello World” application created during onboarding. Built using Python, JavaScript, and HTML to demonstrate initial GitHub workflow and basic version control practices.</p>
     </div>
     <div class="project-card">
-      <h3><a href="https://github.com/Stephen-Henya/The-Start-of-Many" target="_blank">Project 2</a></h3>
+      <h3><a href="https://github.com/Stephen-Henya/The-Start-of-Many" target="_blank">Simple Calculator</a></h3>
       <p>A basic command-line calculator in Python that supports addition, subtraction, multiplication, and division. Built as a hands-on introduction to repositories, commits, and project structuring.</p>
     </div>
   </section>
 
+  <!-- Contact Form Section -->
   <section id="contact" class="gradient-bg">
     <h2>Contact Me</h2>
     <form action="mailto:henyastephen.com" method="post" enctype="text/plain">
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
 
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+      <textarea id="message" name="message" rows="4" placeholder="What would you like to say?"></textarea>
 
       <button type="submit">Send Message</button>
     </form>
   </section>
 
-  <footer>
+  <!-- Social Media and Footer -->
+  <footer class="social-footer">
+    <h3>Let's Connect</h3>
+    <div class="social-icons">
+      <a href="https://github.com/Stephen-Henya" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/stephen-henya" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/drankbandit" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://instagram.com/drankbandit" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
     <p>Designed & Built by Stephen Thiong'o Henya © 2025</p>
   </footer>
 
