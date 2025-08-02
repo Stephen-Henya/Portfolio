@@ -271,14 +271,10 @@ footer {
     font-size: 0.9rem;
     padding: 30px 10px;
   }
-  .social-icons {
-    flex-wrap: wrap;
-    gap: 0.8em;
-    justify-content: center;
-  }
   .social-icons a {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     white-space: nowrap;
     word-break: keep-all;
+    padding: 0.2rem 0.3rem;
   }
 }
