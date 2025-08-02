@@ -1,6 +1,3 @@
-/* Importing the DM Sans font */
-@import url('https://fonts.googleapis.com/css?family=DM Sans');
-
 /* Creating space when jumping to anchors */
 html {
   scroll-behavior: smooth;
@@ -14,7 +11,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "Roboto", "Segoe UI", "Helvetica", "Arial", sans-serif;
   font-size: 22px;
   color: #f1f5f9;
   background: #0f172a;
@@ -191,14 +188,57 @@ footer {
 .social-icons a {
   margin: 0 12px;
   color: #eee;
-  font-size: 28px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+
+  /* GRADIENT TEXT APPLICATION */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .social-icons a:hover {
-  color: #00ffd5;
   transform: scale(1.3);
 }
+
+/* GRADIENT STYLES PER PLATFORM */
+.github {
+  background-image: linear-gradient(to right, #6e5494, #333);
+}
+
+
+.linkedin {
+  background-image: linear-gradient(to right, #0077b5, #00a0dc);
+}
+
+.twitter {
+  background-image: linear-gradient(to right, #1da1f2, #0e71c8);
+}
+
+.instagram {
+  background-image: linear-gradient(to right, #f58529, #dd2a7b, #8134af);
+}
+
+/* PERSONALISED HOVER EFFECTS */
+.github:hover {
+  text-shadow: 0 0 8px #6e5494, 0 0 12px #6e5494;
+}
+
+.linkedin:hover {
+  text-shadow: 0 0 8px #0077b5, 0 0 12px #0077b5;
+}
+
+.twitter:hover {
+  text-shadow: 0 0 8px #1da1f2, 0 0 12px #1da1f2;
+}
+
+.instagram:hover {
+  text-shadow: 0 0 8px #dd2a7b, 0 0 12px #dd2a7b;
+}
+
 
 /* ANIMATED GRADIENT */
 @keyframes gradientBG {
@@ -222,5 +262,17 @@ footer {
   .navbar {
     gap: 0.2rem;
     font-size: 0.5rem;
+  }
+}
+
+/* MOBILE SAFE FOOTER */
+@media screen and (max-width: 768px) {
+  .social-footer {
+    font-size: 0.9rem;
+    gap: 0.2em;
+  }
+  .social-icons a{
+    font-size: 0.9rem;
+    gap: 0.2em;
   }
 }
